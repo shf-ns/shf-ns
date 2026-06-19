@@ -1,13 +1,14 @@
-import styles from "./App.module.css";
+import styles from "@/App.module.css";
+import { Sidebar, Header } from "@/layout";
 
-function App() {
+function App(): React.ReactNode {
   return (
     <div className={styles.App}>
-      <div className={styles.header}>头部</div>
+      <Header />
       <div className={styles.main}>
-        <div className={styles.sidebar}></div>
-        <div className={styles.content}>主体</div>
-        <div className={styles.sidebar}></div>
+        <Sidebar />
+        <div className={styles.content}>内容</div>
+        <Sidebar />
       </div>
     </div>
   );

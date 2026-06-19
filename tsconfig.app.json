@@ -14,7 +14,13 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@styles/*": [
+        "./src/assets/style/*"
+      ],
+      "@layout/*": [
+        "./src/layout/*"
+      ],
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
