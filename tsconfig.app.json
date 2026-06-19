@@ -21,6 +21,9 @@
       "@layout/*": [
         "./src/layout/*"
       ],
+      "@component/*": [
+        "./src/component/*"
+      ],
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

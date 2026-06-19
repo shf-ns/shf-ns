@@ -1,3 +1,8 @@
+:root {
+  --header-color: linear-gradient(181deg, rgba(177, 208, 226, 0.7) 0%, rgba(226, 239, 246, 0.3) 100%);
+}
+
+
 * {
   margin: 0;
   padding: 0;
