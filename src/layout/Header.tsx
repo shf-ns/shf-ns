@@ -1,5 +1,5 @@
 import styles from "@styles/layout/Header.module.css";
-import Avatar from "@component/Avatar";
+import { Avatar, GithubLink } from "@component/index";
 
 function Header(): React.ReactNode {
   return (
@@ -10,7 +10,7 @@ function Header(): React.ReactNode {
         <p>shf-ns</p>
       </div>
       <div className={styles.headerRight}>
-        <div>github</div>
+        <GithubLink />
         <div>菜单</div>
       </div>
     </div>
