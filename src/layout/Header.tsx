@@ -1,5 +1,6 @@
 import styles from "@styles/layout/Header.module.css";
 import { Avatar, GithubLink } from "@component/index";
+import Menu from "@layout/Menu";
 
 function Header(): React.ReactNode {
   return (
@@ -11,7 +12,7 @@ function Header(): React.ReactNode {
       </div>
       <div className={styles.headerRight}>
         <GithubLink />
-        <div>菜单</div>
+        <Menu />
       </div>
     </div>
   );

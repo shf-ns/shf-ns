@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: absolute;
+  top: 43px;
+  right: 0;
+  width: 190px;
+  height: 100px;
+  padding: 10px 15px;
+  background: var(--menu-color);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
