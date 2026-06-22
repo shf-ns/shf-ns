@@ -9,7 +9,7 @@ function Language({ language }: { language: string }): React.ReactNode {
           zh
         </span>
         <span className={styles.divider}></span>
-        <span style={{ color: language === "en" ? "white" : "#8a8a8a" }}>
+        <span style={{ color: language === "zh" ? "#8a8a8a" : "white" }}>
           en
         </span>
       </div>

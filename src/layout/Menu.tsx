@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import { Language, Theme } from "../component/Menu";
-import { useAppSelector, useClickOutside } from "@hook/index";
 import styles from "@styles/component/Menu/Menu.module.css";
+import { Language, Theme } from "@component/Menu";
+import { useAppSelector, useClickOutside } from "@hook/index";
 import { useAppDispatch } from "@hook/index";
 import { getLanguage, saveLanguage } from "@store/module/LanguageSlice";
+import { getTheme, saveTheme } from "@/store/module/Theme";
 import type { AppDispatch } from "@/store";
+import { useEffect, useState } from "react";
 
 function Menu(): React.ReactNode {
   const [isShow, setIsShow] = useState<boolean>(false);
@@ -12,10 +13,16 @@ function Menu(): React.ReactNode {
   const language: string = useAppSelector(
     (state: { language: { value: string } }) => state.language.value,
   );
+
+  const theme: string = useAppSelector(
+    (state: { theme: { value: string } }) => state.theme.value,
+  );
+
   const dispatch: AppDispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(getLanguage());
+    dispatch(getTheme());
   }, [dispatch]);
 
   const boxRef: React.RefObject<HTMLUListElement | null> = useClickOutside(
@@ -62,8 +69,8 @@ function Menu(): React.ReactNode {
         <li className={styles.item} onClick={() => dispatch(saveLanguage())}>
           <Language language={language} />
         </li>
-        <li className={styles.item}>
-          <Theme />
+        <li className={styles.item} onClick={() => dispatch(saveTheme())}>
+          <Theme theme={theme} />
         </li>
       </ul>
     </div>

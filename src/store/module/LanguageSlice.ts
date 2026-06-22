@@ -12,7 +12,6 @@ const initialState: LanguageState = {
 
 export const languageSlice = createSlice({
   name: 'language',
-  // `createSlice` 将从 `initialState` 参数推断 state 类型
   initialState,
   reducers: {
     saveLanguage: (state:LanguageState) => {
