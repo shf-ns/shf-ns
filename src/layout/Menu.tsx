@@ -6,7 +6,7 @@ import styles from "@styles/component/Menu/Menu.module.css";
 function Menu(): React.ReactNode {
   const [isShow, setIsShow] = useState<boolean>(false);
 
-  const boxRef: React.RefObject<HTMLDivElement | null> = useClickOutside(
+  const boxRef: React.RefObject<HTMLUListElement | null> = useClickOutside(
     (): void => {
       setIsShow(false);
     },
@@ -42,14 +42,18 @@ function Menu(): React.ReactNode {
           />
         </svg>
       </div>
-      <div
+      <ul
         ref={boxRef}
         className={styles.menu}
         style={{ display: isShow ? "flex" : "none" }}
       >
-        <Language />
-        <Theme />
-      </div>
+        <li className={styles.item}>
+          <Language />
+        </li>
+        <li className={styles.item}>
+          <Theme />
+        </li>
+      </ul>
     </div>
   );
 }

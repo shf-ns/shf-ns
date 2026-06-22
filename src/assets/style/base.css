@@ -1,6 +1,6 @@
 :root {
   --header-color: linear-gradient(181deg, rgba(177, 208, 226, 0.7) 0%, rgba(226, 239, 246, 0.3) 100%);
-  --menu-color: radial-gradient(circle, rgba(202, 222, 242, 0.9) 0%, rgba(228, 242, 247, 0.5) 100%);
+  --menu-color: radial-gradient(circle, rgba(177, 208, 226, 0.9) 0%, rgba(226, 239, 246, 0.5) 100%);
   ;
 }
 
@@ -15,4 +15,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+li {
+  list-style: none;
 }

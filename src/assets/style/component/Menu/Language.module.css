@@ -15,7 +15,7 @@
   align-items: center;
   flex: 1;
   color: #8a8a8a;
-  border: 1px solid #8a8a8a;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 5px 0px;
 }

@@ -36,8 +36,8 @@ function Theme(): React.ReactNode {
             style={{ display: "none" }}
           />
           <svg
-            width="22px"
-            height="22px"
+            width="20px"
+            height="20px"
             viewBox="0 0 1024 1024"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
