@@ -1,5 +1,5 @@
 import styles from "@styles/App.module.css";
-import { Sidebar, Header } from "@/layout";
+import { Sidebar, Header, Content } from "@/layout";
 
 function App(): React.ReactNode {
   return (
@@ -7,7 +7,7 @@ function App(): React.ReactNode {
       <Header />
       <div className={styles.main}>
         <Sidebar />
-        <div className={styles.content}>内容</div>
+        <Content />
         <Sidebar />
       </div>
     </div>

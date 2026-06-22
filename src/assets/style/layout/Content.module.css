@@ -1,0 +1,19 @@
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divider {
+  width: 100px;
+  height: 1px;
+  background-color: #e5e5e5;
+}

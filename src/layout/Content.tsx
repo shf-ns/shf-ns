@@ -1,0 +1,17 @@
+import styles from "@styles/layout/Content.module.css";
+import { Profile, RandomTalk, Time } from "@/component";
+import type { ReactNode } from "react";
+
+function Content(): ReactNode {
+  return (
+    <div className={styles.content}>
+      <Profile />
+      <div className={styles.show}>
+        <Time />
+        <span className={styles.divider}></span>
+        <RandomTalk />
+      </div>
+    </div>
+  );
+}
+export default Content;
