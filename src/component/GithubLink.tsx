@@ -4,8 +4,8 @@ function GithubLink(): React.ReactNode {
   return (
     <a href="https://github.com/shf-ns" className={styles.btn}>
       <svg
-        width="30px"
-        height="30px"
+        width="100%"
+        height="100%"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

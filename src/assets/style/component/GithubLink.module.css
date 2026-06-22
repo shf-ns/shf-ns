@@ -1,7 +1,10 @@
 .btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   transition: transform 0.3s ease
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  box-shadow: 0 0px 10px rgba(177, 208, 226, 0.7);
 }
