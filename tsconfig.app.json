@@ -26,6 +26,9 @@
       ],
       "@hook/*": [
         "./src/hook/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
       ]
     },
     /* Bundler mode */
