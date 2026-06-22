@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Language, Theme } from "../component/Menu";
-import { useClickOutside } from "@hook/index";
+import { useAppSelector, useClickOutside } from "@hook/index";
 import styles from "@styles/component/Menu/Menu.module.css";
+import { useAppDispatch } from "@hook/index";
+import { getLanguage, saveLanguage } from "@store/module/LanguageSlice";
+import type { AppDispatch } from "@/store";
 
 function Menu(): React.ReactNode {
   const [isShow, setIsShow] = useState<boolean>(false);
+
+  const language: string = useAppSelector(
+    (state: { language: { value: string } }) => state.language.value,
+  );
+  const dispatch: AppDispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getLanguage());
+  }, [dispatch]);
 
   const boxRef: React.RefObject<HTMLUListElement | null> = useClickOutside(
     (): void => {
@@ -47,8 +59,8 @@ function Menu(): React.ReactNode {
         className={styles.menu}
         style={{ display: isShow ? "flex" : "none" }}
       >
-        <li className={styles.item}>
-          <Language />
+        <li className={styles.item} onClick={() => dispatch(saveLanguage())}>
+          <Language language={language} />
         </li>
         <li className={styles.item}>
           <Theme />

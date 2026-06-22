@@ -19,16 +19,6 @@
   padding: 5px 0px;
 }
 
-.light {
-  display: flex;
-  align-items: center;
-}
-
-.dark {
-  display: flex;
-  align-items: center;
-}
-
 .divider {
   width: 1px;
   height: 16px;

@@ -16,6 +16,7 @@ export const languageSlice = createSlice({
   initialState,
   reducers: {
     saveLanguage: (state:LanguageState) => {
+      state.value = state.value === 'zh' ? 'en' : 'zh'
       localStorage.setItem('language', state.value)
     },
     getLanguage: (state: LanguageState) => {

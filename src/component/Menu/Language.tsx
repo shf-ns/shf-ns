@@ -1,31 +1,17 @@
 import styles from "@styles/component/Menu/Language.module.css";
 
-function Language(): React.ReactNode {
+function Language({ language }: { language: string }): React.ReactNode {
   return (
     <div className={styles.language}>
       <p className={styles.title}>语言：</p>
       <div className={styles.content}>
-        <label htmlFor="en" className={styles.en}>
-          <input
-            type="radio"
-            name="language"
-            value="en"
-            id="en"
-            style={{ display: "none" }}
-          />
-          <span>En</span>
-        </label>
+        <span style={{ color: language === "zh" ? "white" : "#8a8a8a" }}>
+          zh
+        </span>
         <span className={styles.divider}></span>
-        <label htmlFor="zh" className={styles.zh}>
-          <input
-            type="radio"
-            name="language"
-            value="zh"
-            id="zh"
-            style={{ display: "none" }}
-          />
-          <span>Cn</span>
-        </label>
+        <span style={{ color: language === "en" ? "white" : "#8a8a8a" }}>
+          en
+        </span>
       </div>
     </div>
   );
