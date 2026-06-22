@@ -24,6 +24,9 @@
       "@component/*": [
         "./src/component/*"
       ],
+      "@hook/*": [
+        "./src/hook/*"
+      ]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

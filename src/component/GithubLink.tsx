@@ -1,9 +1,11 @@
+import styles from "@styles/component/GithubLink.module.css";
+
 function GithubLink(): React.ReactNode {
   return (
-    <a href="https://github.com/shf-ns">
+    <a href="https://github.com/shf-ns" className={styles.btn}>
       <svg
-        width="35px"
-        height="35px"
+        width="30px"
+        height="30px"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
