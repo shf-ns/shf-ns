@@ -1,4 +1,6 @@
+import styles from "@styles/layout/Sidebar.module.css";
+
 function Sidebar(): React.ReactNode {
-  return <div style={{ width: "10%", height: "100%" }}></div>;
+  return <div className={styles.sidebar}></div>;
 }
 export default Sidebar;
