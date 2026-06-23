@@ -6,7 +6,9 @@ function Header(): React.ReactNode {
   return (
     <div className={styles.header}>
       <div className={styles.headerLeft}>
-        <Avatar />
+        <div className={styles.avatar}>
+          <Avatar />
+        </div>
         <span className={styles.divider}></span>
         <p>shf-ns</p>
       </div>
