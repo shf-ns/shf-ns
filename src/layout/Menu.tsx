@@ -32,7 +32,7 @@ function Menu(): React.ReactNode {
   );
 
   return (
-    <div style={{ position: "relative" }}>
+    <div>
       <div
         className={styles.btn}
         onClick={(e: React.MouseEvent) => {

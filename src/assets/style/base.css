@@ -1,7 +1,5 @@
 :root {
   --header-color: linear-gradient(181deg, rgba(177, 208, 226, 0.7) 0%, rgba(226, 239, 246, 0.3) 100%);
-  --menu-color: radial-gradient(circle, rgba(177, 208, 226, 0.9) 0%, rgba(226, 239, 246, 0.5) 100%);
-  ;
   --profile-color: radial-gradient(circle, rgba(177, 208, 226, 1) 0%, rgba(226, 239, 246, 0.6) 100%);
 }
 
