@@ -8,7 +8,6 @@ function Content(): ReactNode {
       <Profile />
       <div className={styles.show}>
         <Time />
-        <span className={styles.divider}></span>
         <RandomTalk />
       </div>
     </div>

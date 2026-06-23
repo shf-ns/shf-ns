@@ -36,6 +36,8 @@
 
 @media (max-width: 768px) {
   .header {
+    position: fixed;
+    top: 0;
     padding: 0 20px;
   }
 }

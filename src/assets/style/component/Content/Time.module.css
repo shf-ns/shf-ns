@@ -1,0 +1,29 @@
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  padding: 20px;
+  margin-top: 20px;
+  background: var(--card-color);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 5px 16px -2px #00000012;
+}
+
+.timeTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.timeText {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 786px) {
+  .time {
+    margin: 0;
+  }
+}
