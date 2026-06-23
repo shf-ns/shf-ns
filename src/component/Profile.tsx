@@ -12,7 +12,7 @@ function Profile(): ReactNode {
         <p>shf-ns</p>
         <h3>欢迎来到我的个人网站！</h3>
       </div>
-      <p className={styles.quote}>quto</p>
+      <p className={styles.quote}>珍惜每一天</p>
     </div>
   );
 }
