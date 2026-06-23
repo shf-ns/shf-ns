@@ -1,5 +1,5 @@
 import styles from "@styles/layout/Content.module.css";
-import { Profile, RandomTalk, Time } from "@/component";
+import { Profile, RandomTalk, Time } from "@component/index";
 import type { ReactNode } from "react";
 
 function Content(): ReactNode {

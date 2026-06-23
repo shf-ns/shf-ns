@@ -1,5 +1,5 @@
 import styles from "@styles/component/Menu/Menu.module.css";
-import { Language, Theme } from "@component/Menu";
+import { Language, Theme } from "@component/index";
 import { useAppSelector, useClickOutside } from "@hook/index";
 import { useAppDispatch } from "@hook/index";
 import { getLanguage, saveLanguage } from "@store/module/LanguageSlice";
