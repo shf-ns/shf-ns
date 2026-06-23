@@ -38,8 +38,8 @@
   box-shadow: 0 2px 10px -2px #00000012;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .profileTop {
-    height: 300px;
+    height: 280px;
   }
 }

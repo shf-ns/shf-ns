@@ -33,7 +33,6 @@
   border-radius: 5px;
 }
 
-.item:hover {
+.item:active {
   background: rgba(225, 225, 225, 0.5);
-  backdrop-filter: blur(10px);
 }
