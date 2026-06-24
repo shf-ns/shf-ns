@@ -1,0 +1,10 @@
+{
+  "profile": {
+    "welcome": "欢迎来到我的个人网站！",
+    "quote": "珍惜每一天"
+  },
+  "menu": {
+    "Language": "语言",
+    "theme": "主题"
+  }
+}

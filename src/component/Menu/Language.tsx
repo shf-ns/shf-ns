@@ -1,9 +1,10 @@
 import styles from "@/assets/style/component/Menu/Language.module.css";
+import { t } from "i18next";
 
 function Language({ language }: { language: string }): React.ReactNode {
   return (
     <div className={styles.language}>
-      <p className={styles.title}>语言：</p>
+      <p className={styles.title}>{t("menu.Language")}：</p>
       <div className={styles.content}>
         <span style={{ color: language === "zh" ? "#a3c6da" : "#8a8a8a" }}>
           zh
