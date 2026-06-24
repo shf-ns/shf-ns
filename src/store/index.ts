@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { LanguageReducer, ThemeReducer } from './module'
+import { LanguageReducer, ThemeReducer, TimeReducer } from './module'
 
 const store = configureStore({
   reducer: {
     language: LanguageReducer,
-    theme: ThemeReducer
+    theme: ThemeReducer,
+    time: TimeReducer
   }
 })
 

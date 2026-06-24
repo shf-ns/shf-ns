@@ -1,7 +1,7 @@
-import styles from "@styles/component/Menu/Menu.module.css";
-import { Language, Theme } from "@component/index";
-import { useAppSelector, useClickOutside, useAppDispatch } from "@hook/index";
-import { getLanguage, saveLanguage } from "@store/module/LanguageSlice";
+import styles from "@/assets/style/component/Menu/Menu.module.css";
+import { Language, Theme } from "@/component";
+import { useAppSelector, useClickOutside, useAppDispatch } from "@/hook";
+import { getLanguage, saveLanguage } from "@/store/module/LanguageSlice";
 import { getTheme, saveTheme } from "@/store/module/Theme";
 import type { AppDispatch } from "@/store";
 import { useEffect, useState } from "react";
