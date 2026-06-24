@@ -1,4 +1,4 @@
-import styles from "@styles/component/Menu/Language.module.css";
+import styles from "@/assets/style/component/Menu/Language.module.css";
 
 function Language({ language }: { language: string }): React.ReactNode {
   return (

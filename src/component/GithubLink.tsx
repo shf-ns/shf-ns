@@ -1,4 +1,4 @@
-import styles from "@styles/component/GithubLink.module.css";
+import styles from "@/assets/style/component/GithubLink.module.css";
 
 function GithubLink(): React.ReactNode {
   return (

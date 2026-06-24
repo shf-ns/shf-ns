@@ -14,21 +14,6 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-      "@styles/*": [
-        "./src/assets/style/*"
-      ],
-      "@layout/*": [
-        "./src/layout/*"
-      ],
-      "@component/*": [
-        "./src/component/*"
-      ],
-      "@hook/*": [
-        "./src/hook/*"
-      ],
-      "@store/*": [
-        "./src/store/*"
       ]
     },
     /* Bundler mode */

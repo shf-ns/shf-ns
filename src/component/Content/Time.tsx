@@ -1,10 +1,12 @@
-import styles from "@styles/component/Content/Time.module.css";
+import styles from "@/assets/style/component/Content/Time.module.css";
 import { useEffect, useState, type ReactNode } from "react";
-import computeTime from "@/utils/computeTime";
-import { type Time } from "@/types/time";
+import { computeTime } from "@/utils";
+import { type Times } from "@/types";
 
 function Time(): ReactNode {
-  const [currentTime, setCurrentTime] = useState<Time>(computeTime(new Date()));
+  const [currentTime, setCurrentTime] = useState<Times>(
+    computeTime(new Date()),
+  );
 
   useEffect(() => {
     const timer = setInterval(() => {

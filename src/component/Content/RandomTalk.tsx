@@ -1,7 +1,7 @@
-import styles from "@styles/component/Content/RandomTalk.module.css";
+import styles from "@/assets/style/component/Content/RandomTalk.module.css";
 import { useEffect, useState, type ReactNode } from "react";
-import { getTalk } from "@/utils/getTalk";
-import type { Talk } from "@/types/talk";
+import { getTalk } from "@/utils";
+import type { Talk } from "@/types";
 
 function RandomTalk(): ReactNode {
   const [loading, setLoading] = useState<boolean>(true);

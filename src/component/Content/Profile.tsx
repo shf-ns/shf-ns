@@ -1,6 +1,6 @@
-import styles from "@styles/component/Content/Profile.module.css";
+import styles from "@/styles/component/Content/Profile.module.css";
 import type { ReactNode } from "react";
-import Avatar from "@component/Avatar";
+import Avatar from "@/component/Avatar";
 
 function Profile(): ReactNode {
   return (

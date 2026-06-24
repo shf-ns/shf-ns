@@ -1,4 +1,4 @@
-import styles from "@styles/component/Menu/Theme.module.css";
+import styles from "@/assets/style/component/Menu/Theme.module.css";
 
 function Theme({ theme }: { theme: string }): React.ReactNode {
   return (

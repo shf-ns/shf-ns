@@ -1,4 +1,4 @@
-import styles from "@styles/App.module.css";
+import styles from "@/assets/style/App.module.css";
 import { Sidebar, Header, Content } from "@/layout";
 
 function App(): React.ReactNode {

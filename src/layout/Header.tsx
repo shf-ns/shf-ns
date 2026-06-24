@@ -1,6 +1,6 @@
-import styles from "@styles/layout/Header.module.css";
-import { Avatar, GithubLink } from "@component/index";
-import Menu from "@layout/Menu";
+import styles from "@/assets/style/layout/Header.module.css";
+import { Avatar, GithubLink } from "@/component";
+import Menu from "@/layout/Menu";
 
 function Header(): React.ReactNode {
   return (

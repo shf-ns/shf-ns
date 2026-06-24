@@ -1,4 +1,4 @@
-export interface Time {
+export interface Times {
   year: string;
   month: string;
   day: string;

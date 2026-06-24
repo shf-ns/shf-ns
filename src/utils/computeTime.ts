@@ -1,7 +1,7 @@
-import {type Time} from '@/types/time'
+import {type Times} from '@/types/Time'
 
-function useComputeTime(data: Date): Time {
-  const time:Time = {
+function useComputeTime(data: Date): Times {
+  const time:Times = {
     year: '',
     month: '',
     day: '',
