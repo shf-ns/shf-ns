@@ -18,7 +18,7 @@
   background: var(--card-color);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  box-shadow: 0 5px 16px -2px #00000012;
+  box-shadow: var(--shadow-color);
 }
 
 .avatar {
@@ -37,7 +37,7 @@
   font-weight: bold;
   background: var(--card-color);
   border-radius: 10px;
-  box-shadow: 0 2px 10px -2px #00000012;
+  box-shadow: var(--shadow-color);
 }
 
 @media (max-width: 786px) {

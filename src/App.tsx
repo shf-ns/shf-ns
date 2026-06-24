@@ -1,7 +1,21 @@
 import styles from "@/assets/style/App.module.css";
 import { Sidebar, Header, Content } from "@/layout";
+import { useAppSelector } from "@/hook";
+import { useEffect } from "react";
 
 function App(): React.ReactNode {
+  const theme: string = useAppSelector(
+    (state: { theme: { value: string } }) => state.theme.value,
+  );
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
     <div className={styles.App}>
       <Header />

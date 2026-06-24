@@ -5,13 +5,20 @@ import { getLanguage, saveLanguage } from "@/store/module/LanguageSlice";
 import { getTheme, saveTheme } from "@/store/module/Theme";
 import type { AppDispatch } from "@/store";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Menu(): React.ReactNode {
   const [isShow, setIsShow] = useState<boolean>(false);
+  const { i18n } = useTranslation();
 
   const language: string = useAppSelector(
     (state: { language: { value: string } }) => state.language.value,
   );
+  const toggleLanguage = (): void => {
+    const newLang = language === "zh" ? "en" : "zh";
+    i18n.changeLanguage(newLang);
+    dispatch(saveLanguage(newLang));
+  };
 
   const theme: string = useAppSelector(
     (state: { theme: { value: string } }) => state.theme.value,
@@ -65,7 +72,7 @@ function Menu(): React.ReactNode {
         className={styles.menu}
         style={{ display: isShow ? "flex" : "none" }}
       >
-        <li className={styles.item} onClick={() => dispatch(saveLanguage())}>
+        <li className={styles.item} onClick={() => toggleLanguage()}>
           <Language language={language} />
         </li>
         <li className={styles.item} onClick={() => dispatch(saveTheme())}>

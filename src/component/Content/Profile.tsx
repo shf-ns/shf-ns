@@ -1,8 +1,10 @@
 import styles from "@/assets/style/component/Content/Profile.module.css";
 import type { ReactNode } from "react";
 import Avatar from "@/component/Avatar";
+import { useTranslation } from "react-i18next";
 
 function Profile(): ReactNode {
+  const { t } = useTranslation();
   return (
     <div className={styles.profile}>
       <div className={styles.profileTop}>
@@ -10,9 +12,9 @@ function Profile(): ReactNode {
           <Avatar />
         </div>
         <p>shf-ns</p>
-        <h3>欢迎来到我的个人网站！</h3>
+        <h3 style={{ fontSize: "15px" }}>{t("profile.welcome")}</h3>
       </div>
-      <p className={styles.quote}>珍惜每一天</p>
+      <p className={styles.quote}>{t("profile.quote")}</p>
     </div>
   );
 }

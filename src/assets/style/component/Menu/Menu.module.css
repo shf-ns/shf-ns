@@ -6,7 +6,8 @@
 }
 
 .btn:hover {
-  box-shadow: 0 0px 10px rgba(177, 208, 226, 0.7);
+  cursor: pointer;
+  box-shadow: var(--shadow-color);
 }
 
 .menu {
@@ -17,13 +18,12 @@
   position: absolute;
   top: 60px;
   right: 15px;
-  width: 190px;
+  width: 215px;
   height: 110px;
   padding: 10px 15px;
-  background: white;
+  background: var(--menu-color);
   border-radius: 10px;
-  box-shadow: 0 0px 10px rgba(225, 225, 225, 0.9);
-  z-index: 1000;
+  box-shadow: var(--shadow-color);
 }
 
 .item {

@@ -8,7 +8,7 @@
   background: var(--card-color);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  box-shadow: 0 5px 16px -2px #00000012;
+  box-shadow: var(--shadow-color);
 }
 
 .randomTalkText {

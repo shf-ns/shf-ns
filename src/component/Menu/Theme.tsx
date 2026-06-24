@@ -1,9 +1,10 @@
 import styles from "@/assets/style/component/Menu/Theme.module.css";
+import { t } from "i18next";
 
 function Theme({ theme }: { theme: string }): React.ReactNode {
   return (
     <div className={styles.theme}>
-      <p className={styles.title}>主题：</p>
+      <p className={styles.title}>{t("menu.theme")}：</p>
       <div className={styles.content}>
         <svg
           width="22px"
