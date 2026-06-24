@@ -1,4 +1,4 @@
-import styles from "@/assets/style/component/Menu/Menu.module.css";
+import styles from "@/assets/style/layout/Menu.module.css";
 import { Language, Theme } from "@/component";
 import { useAppSelector, useClickOutside, useAppDispatch } from "@/hook";
 import { getLanguage, saveLanguage } from "@/store/module/LanguageSlice";

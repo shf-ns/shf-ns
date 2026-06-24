@@ -13,7 +13,6 @@ function Profile(): ReactNode {
         </div>
         <p>shf-ns</p>
         <h3 style={{ fontSize: "15px" }}>{t("profile.welcome")}</h3>
-        <h3>{t("profile.welcome")}</h3>
       </div>
       <p className={styles.quote}>{t("profile.quote")}</p>
     </div>
