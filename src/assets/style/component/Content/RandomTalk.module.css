@@ -1,9 +1,9 @@
 .randomTalk {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
-  height: 160px;
+  min-height: 160px;
   padding: 20px;
   background: var(--card-color);
   backdrop-filter: blur(10px);
@@ -12,13 +12,18 @@
 }
 
 .randomTalkText {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .randomTalkAuthor {
   font-size: 16px;
   font-weight: 400;
+  text-align: right;
+}
+
+.loading {
+  text-align: center;
 }
 
 @media (max-width: 786px) {
