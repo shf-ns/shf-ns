@@ -4,15 +4,16 @@ import { computeTime } from "@/utils";
 import { type Times } from "@/types";
 import { useAppDispatch } from "@/hook";
 import { saveTime } from "@/store/module/Time";
+import type { AppDispatch } from "@/store";
 
 function Time(): ReactNode {
   const [currentTime, setCurrentTime] = useState<Times>(
     computeTime(new Date()),
   );
 
-  const dispatch = useAppDispatch();
+  const dispatch: AppDispatch = useAppDispatch();
 
-  useEffect(() => {
+  useEffect((): (() => void) => {
     const timer: number = setInterval(() => {
       setCurrentTime(computeTime(new Date()));
     }, 1000);
@@ -20,8 +21,8 @@ function Time(): ReactNode {
     const data: string = new Date().toDateString();
     dispatch(saveTime(data));
 
-    return () => clearInterval(timer);
-  }, []);
+    return (): void => clearInterval(timer);
+  }, [dispatch]);
 
   return (
     <div className={styles.time}>

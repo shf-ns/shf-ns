@@ -26,7 +26,7 @@ function Menu(): React.ReactNode {
 
   const dispatch: AppDispatch = useAppDispatch();
 
-  useEffect(() => {
+  useEffect((): void => {
     dispatch(getLanguage());
     dispatch(getTheme());
   }, [dispatch]);

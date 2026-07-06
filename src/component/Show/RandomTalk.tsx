@@ -1,7 +1,7 @@
 import styles from "@/assets/style/component/Show/RandomTalk.module.css";
 import { useEffect, useState, type ReactNode } from "react";
 import { getTalk } from "@/utils";
-import type { Talk } from "@/types";
+import type { HitokotoResponse, Talk } from "@/types";
 
 function RandomTalk(): ReactNode {
   const [loading, setLoading] = useState<boolean>(true);
@@ -10,10 +10,10 @@ function RandomTalk(): ReactNode {
     author: "",
   });
 
-  useEffect(() => {
-    async function getTalkText() {
+  useEffect((): void => {
+    async function getTalkText(): Promise<void> {
       try {
-        const request = await getTalk();
+        const request: HitokotoResponse = await getTalk();
         setLoading(true);
         setTalk({
           content: request.hitokoto,

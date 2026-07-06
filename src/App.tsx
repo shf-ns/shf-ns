@@ -8,7 +8,7 @@ function App(): React.ReactNode {
     (state: { theme: { value: string } }) => state.theme.value,
   );
 
-  useEffect(() => {
+  useEffect((): void => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {

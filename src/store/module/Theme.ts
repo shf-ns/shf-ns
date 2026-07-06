@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, type Reducer } from '@reduxjs/toolkit'
 
 // 为 slice state 定义一个类型
 interface ThemeState {
@@ -14,16 +14,16 @@ export const themeSlice = createSlice({
   name: 'theme',
   initialState,
   reducers: {
-    saveTheme: (state:ThemeState) => {
+    saveTheme: (state:ThemeState): void => {
       state.value = state.value === 'light' ? 'dark' : 'light'
       localStorage.setItem('theme', state.value)
     },
-    getTheme: (state: ThemeState) => {
+    getTheme: (state: ThemeState): void => {
       state.value = localStorage.getItem('theme') || 'light'
     }
   }
 })
 
 export const { saveTheme, getTheme } = themeSlice.actions
-const ThemeReducer = themeSlice.reducer
+const ThemeReducer: Reducer<ThemeState> = themeSlice.reducer
 export default ThemeReducer
