@@ -1,4 +1,4 @@
-import styles from "@/assets/style/component/Content/Time.module.css";
+import styles from "@/assets/style/component/Show/Time.module.css";
 import { useEffect, useState, type ReactNode } from "react";
 import { computeTime } from "@/utils";
 import { type Times } from "@/types";

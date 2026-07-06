@@ -1,6 +1,6 @@
 import GithubLink from "./GithubLink";
 import Avatar from "./Avatar";
-import { Profile, RandomTalk, Time } from "./Content";
+import { RandomTalk, Time } from "./Show";
 import { Language, Theme } from './Menu'
 
-export { GithubLink, Avatar, Profile, RandomTalk, Time, Language, Theme };
+export { GithubLink, Avatar, RandomTalk, Time, Language, Theme };

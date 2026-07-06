@@ -1,0 +1,7 @@
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+  width: 100%;
+}

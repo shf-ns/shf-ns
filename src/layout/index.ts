@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
 import Header from "./Header";
-import Content from "./Content";
+import Profile from "./Profile";
+import Show from "./Show";
 
-export { Sidebar, Header, Content };
+export { Sidebar, Header, Profile, Show };

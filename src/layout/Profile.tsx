@@ -1,4 +1,4 @@
-import styles from "@/assets/style/component/Content/Profile.module.css";
+import styles from "@/assets/style/layout/Profile.module.css";
 import type { ReactNode } from "react";
 import Avatar from "@/component/Avatar";
 import { useTranslation } from "react-i18next";

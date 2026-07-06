@@ -1,5 +1,5 @@
 import styles from "@/assets/style/App.module.css";
-import { Sidebar, Header, Content } from "@/layout";
+import { Sidebar, Header, Profile, Show } from "@/layout";
 import { useAppSelector } from "@/hook";
 import { useEffect } from "react";
 
@@ -21,7 +21,10 @@ function App(): React.ReactNode {
       <Header />
       <div className={styles.main}>
         <Sidebar />
-        <Content />
+        <div className={styles.content}>
+          <Profile />
+          <Show />
+        </div>
         <Sidebar />
       </div>
     </div>
