@@ -31,6 +31,8 @@ body {
   /* Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
+  background: var(--bg-color);
+  transition: background 0.3s ease-in-out;
 }
 
 /* WebKit 浏览器（Chrome、Safari等）隐藏滚动条 */
